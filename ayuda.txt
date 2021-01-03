@@ -1,0 +1,37 @@
+1-.craarse un ambiente con anaconda.
+conda create -n django python=3.8
+
+2-.activarlo
+activate django
+
+3-. crear en carpeta requirements.txt
+
+4-. en terminal en vs code
+pip install -r requirements.txt
+
+5-. crear project con django
+django-admin startproject profiles_project .
+
+6-. se crea un app de perfiles
+python manage.py startapp profiles_api
+
+7-.Después de crear las tablas el modelo, hay que migrarlas
+python manage.py makemigrations profiles_api
+
+python manage.py migrate
+
+8-. Crear super usuario para creat una vista
+python manage.py createsuperuser	
+
+9-.correr el servidor
+python manage.py runserver
+	
+
+10-. entrar al server, direccion/admin, con tu superuser creado
+
+
+API VIEW
+
+11-. entrar a
+http://127.0.0.1:8000/api/hello-view/
+
